@@ -1,13 +1,13 @@
 //
-//  CodexHeatmapUITests.swift
-//  CodexHeatmapUITests
+//  CodexPulseUITests.swift
+//  CodexPulseUITests
 //
 //  Created by Ari Sabogal on 2/7/26.
 //
 
 import XCTest
 
-final class CodexHeatmapUITests: XCTestCase {
+final class CodexPulseUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

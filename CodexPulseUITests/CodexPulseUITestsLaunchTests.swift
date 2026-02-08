@@ -1,13 +1,13 @@
 //
-//  CodexHeatmapUITestsLaunchTests.swift
-//  CodexHeatmapUITests
+//  CodexPulseUITestsLaunchTests.swift
+//  CodexPulseUITests
 //
 //  Created by Ari Sabogal on 2/7/26.
 //
 
 import XCTest
 
-final class CodexHeatmapUITestsLaunchTests: XCTestCase {
+final class CodexPulseUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

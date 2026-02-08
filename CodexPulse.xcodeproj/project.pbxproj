@@ -12,37 +12,37 @@
 			containerPortal = DBBC2D2B2F384535009341F5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DBBC2D322F384535009341F5;
-			remoteInfo = CodexHeatmap;
+			remoteInfo = CodexPulse;
 		};
 		DBBC2D4B2F384537009341F5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = DBBC2D2B2F384535009341F5 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = DBBC2D322F384535009341F5;
-			remoteInfo = CodexHeatmap;
+			remoteInfo = CodexPulse;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DBBC2D332F384535009341F5 /* CodexHeatmap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodexHeatmap.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBBC2D402F384537009341F5 /* CodexHeatmapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexHeatmapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DBBC2D4A2F384537009341F5 /* CodexHeatmapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexHeatmapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBC2D332F384535009341F5 /* CodexPulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodexPulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBC2D402F384537009341F5 /* CodexPulseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexPulseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBBC2D4A2F384537009341F5 /* CodexPulseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodexPulseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		DBBC2D352F384535009341F5 /* CodexHeatmap */ = {
+		DBBC2D352F384535009341F5 /* CodexPulse */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CodexHeatmap;
+			path = CodexPulse;
 			sourceTree = "<group>";
 		};
-		DBBC2D432F384537009341F5 /* CodexHeatmapTests */ = {
+		DBBC2D432F384537009341F5 /* CodexPulseTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CodexHeatmapTests;
+			path = CodexPulseTests;
 			sourceTree = "<group>";
 		};
-		DBBC2D4D2F384537009341F5 /* CodexHeatmapUITests */ = {
+		DBBC2D4D2F384537009341F5 /* CodexPulseUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CodexHeatmapUITests;
+			path = CodexPulseUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,9 +75,9 @@
 		DBBC2D2A2F384535009341F5 = {
 			isa = PBXGroup;
 			children = (
-				DBBC2D352F384535009341F5 /* CodexHeatmap */,
-				DBBC2D432F384537009341F5 /* CodexHeatmapTests */,
-				DBBC2D4D2F384537009341F5 /* CodexHeatmapUITests */,
+				DBBC2D352F384535009341F5 /* CodexPulse */,
+				DBBC2D432F384537009341F5 /* CodexPulseTests */,
+				DBBC2D4D2F384537009341F5 /* CodexPulseUITests */,
 				DBBC2D342F384535009341F5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,9 +85,9 @@
 		DBBC2D342F384535009341F5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DBBC2D332F384535009341F5 /* CodexHeatmap.app */,
-				DBBC2D402F384537009341F5 /* CodexHeatmapTests.xctest */,
-				DBBC2D4A2F384537009341F5 /* CodexHeatmapUITests.xctest */,
+				DBBC2D332F384535009341F5 /* CodexPulse.app */,
+				DBBC2D402F384537009341F5 /* CodexPulseTests.xctest */,
+				DBBC2D4A2F384537009341F5 /* CodexPulseUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,31 +95,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DBBC2D322F384535009341F5 /* CodexHeatmap */ = {
+		DBBC2D322F384535009341F5 /* CodexPulse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBBC2D542F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmap" */;
+			buildConfigurationList = DBBC2D542F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulse" */;
 			buildPhases = (
 				DBBC2D2F2F384535009341F5 /* Sources */,
 				DBBC2D302F384535009341F5 /* Frameworks */,
 				DBBC2D312F384535009341F5 /* Resources */,
+				DBBC2D5D2F384537009341F5 /* Install Latest Build to Applications */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				DBBC2D352F384535009341F5 /* CodexHeatmap */,
+				DBBC2D352F384535009341F5 /* CodexPulse */,
 			);
-			name = CodexHeatmap;
+			name = CodexPulse;
 			packageProductDependencies = (
 			);
-			productName = CodexHeatmap;
-			productReference = DBBC2D332F384535009341F5 /* CodexHeatmap.app */;
+			productName = CodexPulse;
+			productReference = DBBC2D332F384535009341F5 /* CodexPulse.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DBBC2D3F2F384537009341F5 /* CodexHeatmapTests */ = {
+		DBBC2D3F2F384537009341F5 /* CodexPulseTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBBC2D572F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmapTests" */;
+			buildConfigurationList = DBBC2D572F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulseTests" */;
 			buildPhases = (
 				DBBC2D3C2F384537009341F5 /* Sources */,
 				DBBC2D3D2F384537009341F5 /* Frameworks */,
@@ -131,18 +132,18 @@
 				DBBC2D422F384537009341F5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DBBC2D432F384537009341F5 /* CodexHeatmapTests */,
+				DBBC2D432F384537009341F5 /* CodexPulseTests */,
 			);
-			name = CodexHeatmapTests;
+			name = CodexPulseTests;
 			packageProductDependencies = (
 			);
-			productName = CodexHeatmapTests;
-			productReference = DBBC2D402F384537009341F5 /* CodexHeatmapTests.xctest */;
+			productName = CodexPulseTests;
+			productReference = DBBC2D402F384537009341F5 /* CodexPulseTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DBBC2D492F384537009341F5 /* CodexHeatmapUITests */ = {
+		DBBC2D492F384537009341F5 /* CodexPulseUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DBBC2D5A2F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmapUITests" */;
+			buildConfigurationList = DBBC2D5A2F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulseUITests" */;
 			buildPhases = (
 				DBBC2D462F384537009341F5 /* Sources */,
 				DBBC2D472F384537009341F5 /* Frameworks */,
@@ -154,13 +155,13 @@
 				DBBC2D4C2F384537009341F5 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				DBBC2D4D2F384537009341F5 /* CodexHeatmapUITests */,
+				DBBC2D4D2F384537009341F5 /* CodexPulseUITests */,
 			);
-			name = CodexHeatmapUITests;
+			name = CodexPulseUITests;
 			packageProductDependencies = (
 			);
-			productName = CodexHeatmapUITests;
-			productReference = DBBC2D4A2F384537009341F5 /* CodexHeatmapUITests.xctest */;
+			productName = CodexPulseUITests;
+			productReference = DBBC2D4A2F384537009341F5 /* CodexPulseUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -186,7 +187,7 @@
 					};
 				};
 			};
-			buildConfigurationList = DBBC2D2E2F384535009341F5 /* Build configuration list for PBXProject "CodexHeatmap" */;
+			buildConfigurationList = DBBC2D2E2F384535009341F5 /* Build configuration list for PBXProject "CodexPulse" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -200,9 +201,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DBBC2D322F384535009341F5 /* CodexHeatmap */,
-				DBBC2D3F2F384537009341F5 /* CodexHeatmapTests */,
-				DBBC2D492F384537009341F5 /* CodexHeatmapUITests */,
+				DBBC2D322F384535009341F5 /* CodexPulse */,
+				DBBC2D3F2F384537009341F5 /* CodexPulseTests */,
+				DBBC2D492F384537009341F5 /* CodexPulseUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +232,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DBBC2D5D2F384537009341F5 /* Install Latest Build to Applications */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(TARGET_BUILD_DIR)/$(WRAPPER_NAME)",
+			);
+			name = "Install Latest Build to Applications";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"/Applications/$(WRAPPER_NAME)",
+				"$(HOME)/Applications/$(WRAPPER_NAME)",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" != \"Debug\" ]; then\n  exit 0\nfi\n\nSRC=\"${TARGET_BUILD_DIR}/${WRAPPER_NAME}\"\nSYSTEM_DEST=\"/Applications/${WRAPPER_NAME}\"\nUSER_APPS_DIR=\"${HOME}/Applications\"\nUSER_DEST=\"${USER_APPS_DIR}/${WRAPPER_NAME}\"\n\nif [ ! -d \"$SRC\" ]; then\n  exit 0\nfi\n\nif /usr/bin/rsync -a --delete \"$SRC/\" \"$SYSTEM_DEST/\"; then\n  echo \"Installed latest build to $SYSTEM_DEST\"\n  exit 0\nfi\n\n/bin/mkdir -p \"$USER_APPS_DIR\"\nif /usr/bin/rsync -a --delete \"$SRC/\" \"$USER_DEST/\"; then\n  echo \"Installed latest build to $USER_DEST\"\nelse\n  echo \"warning: Could not install latest build to /Applications or ~/Applications (check permissions).\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DBBC2D2F2F384535009341F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,12 +283,12 @@
 /* Begin PBXTargetDependency section */
 		DBBC2D422F384537009341F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBBC2D322F384535009341F5 /* CodexHeatmap */;
+			target = DBBC2D322F384535009341F5 /* CodexPulse */;
 			targetProxy = DBBC2D412F384537009341F5 /* PBXContainerItemProxy */;
 		};
 		DBBC2D4C2F384537009341F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DBBC2D322F384535009341F5 /* CodexHeatmap */;
+			target = DBBC2D322F384535009341F5 /* CodexPulse */;
 			targetProxy = DBBC2D4B2F384537009341F5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -398,18 +423,20 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYS2JHDP96;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmap;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -430,18 +457,20 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = NYS2JHDP96;
-				ENABLE_APP_SANDBOX = YES;
+				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmap;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
@@ -463,14 +492,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmapTests;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodexHeatmap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodexHeatmap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodexPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodexPulse";
 			};
 			name = Debug;
 		};
@@ -484,14 +513,14 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmapTests;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodexHeatmap.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodexHeatmap";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CodexPulse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CodexPulse";
 			};
 			name = Release;
 		};
@@ -503,14 +532,14 @@
 				DEVELOPMENT_TEAM = NYS2JHDP96;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmapUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = CodexHeatmap;
+				TEST_TARGET_NAME = CodexPulse;
 			};
 			name = Debug;
 		};
@@ -522,21 +551,21 @@
 				DEVELOPMENT_TEAM = NYS2JHDP96;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexHeatmapUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = arisabogal.CodexPulseUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = NO;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = CodexHeatmap;
+				TEST_TARGET_NAME = CodexPulse;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DBBC2D2E2F384535009341F5 /* Build configuration list for PBXProject "CodexHeatmap" */ = {
+		DBBC2D2E2F384535009341F5 /* Build configuration list for PBXProject "CodexPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBBC2D522F384537009341F5 /* Debug */,
@@ -545,7 +574,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBBC2D542F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmap" */ = {
+		DBBC2D542F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBBC2D552F384537009341F5 /* Debug */,
@@ -554,7 +583,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBBC2D572F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmapTests" */ = {
+		DBBC2D572F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulseTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBBC2D582F384537009341F5 /* Debug */,
@@ -563,7 +592,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DBBC2D5A2F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexHeatmapUITests" */ = {
+		DBBC2D5A2F384537009341F5 /* Build configuration list for PBXNativeTarget "CodexPulseUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DBBC2D5B2F384537009341F5 /* Debug */,

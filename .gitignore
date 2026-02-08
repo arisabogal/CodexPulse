@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Xcode user-specific data
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+*.xcuserstate
+
+# Build artifacts
+DerivedData/
+.derived/
+build/
+
+# Swift Package Manager
+.build/
+
+# Local tooling
+*.log
+
