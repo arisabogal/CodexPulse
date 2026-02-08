@@ -23,7 +23,7 @@ When you work with Codex regularly, usage trends are hard to see from raw sessio
 
 ## Requirements
 
-- macOS (project currently configured with a `26.2` deployment target in Xcode settings).
+- macOS 13.0+ (project currently configured with a `13.0` deployment target in Xcode settings).
 
 ## Quick download (no Xcode)
 
@@ -48,19 +48,9 @@ Run tests from Xcode, or use:
 xcodebuild test -project CodexPulse.xcodeproj -scheme CodexPulse -destination 'platform=macOS'
 ```
 
-## First release process
+## Releasing
 
-1. Update `CHANGELOG.md`.
-2. Ensure docs and screenshots are current.
-3. Tag the release:
-
-```bash
-git tag -a v0.1.0 -m "First open-source release"
-git push origin main --tags
-```
-
-4. Create a GitHub Release from that tag and include highlights.
-5. Attach a prebuilt app zip named `CodexPulse.app.zip` so users can install without Xcode.
+Maintainer release steps live in `RELEASING.md`.
 
 ## Contributing
 
