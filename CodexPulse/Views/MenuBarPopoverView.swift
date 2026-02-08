@@ -31,6 +31,7 @@ struct MenuBarPopoverView: View {
     @State private var heatmapRange: HeatmapRangeOption = .oneMonth
     @State private var shareFeedbackMessage: String?
     @State private var shareFeedbackTask: Task<Void, Never>?
+    @State private var showsQuitConfirmation = false
 
     private let calendar = Calendar.autoupdatingCurrent
 
@@ -52,6 +53,16 @@ struct MenuBarPopoverView: View {
         }
         .padding(12)
         .frame(width: 640)
+        .alert("Quit CodexPulse?", isPresented: $showsQuitConfirmation) {
+            Button("Cancel", role: .cancel) {}
+#if os(macOS)
+            Button("Quit", role: .destructive) {
+                NSApp.terminate(nil)
+            }
+#endif
+        } message: {
+            Text("You can relaunch it anytime from Applications.")
+        }
         .onAppear {
             viewModel.popoverDidAppear()
         }
@@ -86,6 +97,7 @@ struct MenuBarPopoverView: View {
                 shareFeedbackBadge
                 updateInstallButton(isCompact: false)
                 refreshButton
+                quitButton(isCompact: false)
             }
 
             HStack(spacing: 8) {
@@ -93,6 +105,7 @@ struct MenuBarPopoverView: View {
                 shareFeedbackBadge
                 updateInstallButton(isCompact: true)
                 refreshButton
+                quitButton(isCompact: true)
             }
         }
     }
@@ -164,6 +177,22 @@ struct MenuBarPopoverView: View {
         }
         .buttonStyle(.borderless)
         .help("Refresh usage")
+    }
+
+    private func quitButton(isCompact: Bool) -> some View {
+        Button {
+            showsQuitConfirmation = true
+        } label: {
+            if isCompact {
+                Image(systemName: "power")
+            } else {
+                Label("Quit", systemImage: "power")
+            }
+        }
+        .controlSize(.small)
+        .buttonStyle(.bordered)
+        .tint(.red)
+        .help("Quit CodexPulse")
     }
 
     private var pacingPanel: some View {
