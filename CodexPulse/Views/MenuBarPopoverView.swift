@@ -700,18 +700,14 @@ struct MenuBarPopoverView: View {
 
     private var currentWeekBreakdown: [ShareWeekdayMetric] {
         let now = Date()
-        var iso = Calendar(identifier: .iso8601)
-        iso.timeZone = calendar.timeZone
-
         let today = calendar.startOfDay(for: now)
-        let weekStart = iso.date(from: iso.dateComponents([.yearForWeekOfYear, .weekOfYear], from: today))
-            ?? today
-        let dayLabels = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+        let rollingWeekStart = calendar.date(byAdding: .day, value: -6, to: today) ?? today
 
-        return dayLabels.enumerated().map { index, label in
-            let day = iso.date(byAdding: .day, value: index, to: weekStart) ?? weekStart
+        return (0 ..< 7).map { index in
+            let day = calendar.date(byAdding: .day, value: index, to: rollingWeekStart) ?? rollingWeekStart
             let normalized = calendar.startOfDay(for: day)
             let tokens = viewModel.dailyUsageByDate[normalized]?.totalTokens ?? 0
+            let label = normalized.formatted(.dateTime.weekday(.abbreviated))
             return ShareWeekdayMetric(label: label, tokens: tokens)
         }
     }

@@ -457,25 +457,19 @@ final class HeatmapViewModel: ObservableObject {
         let dailyCost = map[today]?.estimatedCostUSD ?? 0
         let previousDailyTokens = map[yesterday]?.totalTokens ?? 0
 
-        let weekInterval = calendar.dateInterval(of: .weekOfYear, for: today)
-        let weekStart = weekInterval?.start ?? today
-        let elapsedDays = (calendar.dateComponents([.day], from: weekStart, to: today).day ?? 0) + 1
-
         var weeklyTokens = 0
         var weeklyCost = 0.0
         var previousWeeklyTokens = 0
 
-        for offset in 0 ..< max(elapsedDays, 1) {
-            let currentDay = calendar.date(byAdding: .day, value: offset, to: weekStart) ?? weekStart
-            guard currentDay <= today else { continue }
-
+        for offset in 0 ..< 7 {
+            let currentDay = calendar.date(byAdding: .day, value: -offset, to: today) ?? today
             if let usage = map[currentDay] {
                 weeklyTokens += usage.totalTokens
                 weeklyCost += usage.estimatedCostUSD
             }
 
-            let previousWeekDay = calendar.date(byAdding: .day, value: -7, to: currentDay) ?? currentDay
-            previousWeeklyTokens += map[previousWeekDay]?.totalTokens ?? 0
+            let previousWindowDay = calendar.date(byAdding: .day, value: -(offset + 7), to: today) ?? today
+            previousWeeklyTokens += map[previousWindowDay]?.totalTokens ?? 0
         }
 
         var last30DaysTokens = 0
@@ -597,9 +591,9 @@ final class HeatmapViewModel: ObservableObject {
             )
         }
 
-        let weekInterval = calendar.dateInterval(of: .weekOfYear, for: now)
-        let weekStart = weekInterval?.start ?? calendar.startOfDay(for: now)
-        let weekEnd = weekInterval?.end ?? now
+        let today = calendar.startOfDay(for: now)
+        let rollingWeekStart = calendar.date(byAdding: .day, value: -6, to: today) ?? today
+        let rollingWeekEnd = calendar.date(byAdding: .day, value: 1, to: today) ?? now
 
         var dailyTotals: [Date: Int] = [:]
         var hourlyTotals: [Date: Int] = [:]
@@ -621,7 +615,7 @@ final class HeatmapViewModel: ObservableObject {
         }
 
         let weeklyMostProductiveDay = dailyTotals
-            .filter { $0.key >= weekStart && $0.key < weekEnd }
+            .filter { $0.key >= rollingWeekStart && $0.key < rollingWeekEnd }
             .max { lhs, rhs in
                 if lhs.value == rhs.value {
                     return lhs.key < rhs.key
@@ -630,7 +624,7 @@ final class HeatmapViewModel: ObservableObject {
             }
 
         let weeklyPeakHourly = hourlyTotals
-            .filter { $0.key >= weekStart && $0.key < weekEnd }
+            .filter { $0.key >= rollingWeekStart && $0.key < rollingWeekEnd }
             .max { lhs, rhs in
                 if lhs.value == rhs.value {
                     return lhs.key < rhs.key
